@@ -12,6 +12,10 @@ body {
   color: white;
 }
 
+nav {
+  display: none;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,7 +23,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2em;
+  padding: 2em 2em 2em 1.25em;
 }
 
 header .nav-title {
@@ -42,7 +46,9 @@ header ul a {
   position: absolute;
   top: 1.75rem;
   right: 1.75rem;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -77,5 +83,16 @@ img {
 
 .social {
   display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .toggle-button {
+    display: none;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=index.css.map */
