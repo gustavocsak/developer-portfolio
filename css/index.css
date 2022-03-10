@@ -1,1 +1,173 @@
-/* No CSS *//*# sourceMappingURL=index.css.map */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+}
+
+.nav-container {
+  background-color: #00b4d8;
+}
+
+.nav-container a {
+  color: white;
+}
+
+header {
+  padding: 1.5em;
+}
+
+header .nav-title {
+  color: white;
+  font-weight: 500;
+  font-size: x-large;
+  padding-bottom: 1rem;
+}
+
+nav {
+  display: none;
+}
+
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.active ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 0.75rem;
+}
+
+.active ul a {
+  display: block;
+  padding: 1rem 0;
+}
+
+.active ul li {
+  text-align: center;
+}
+
+.active ul li:hover {
+  background-color: #0096c7;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.75rem;
+  right: 1.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.social {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .toggle-button {
+    display: none;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 1.5em;
+  }
+  header .nav-title {
+    padding: 0;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header ul a {
+    padding: 0 1em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background-color: unset;
+  }
+  .nav-container header {
+    background-color: #0096c7;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social {
+    display: block;
+    padding: 2em 4em 2em 0;
+  }
+  .social ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: right;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 70%;
+  }
+  .social ul img {
+    width: 30px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

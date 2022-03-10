@@ -1,1 +1,152 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
 
+.nav-container {
+    background-color: #00b4d8;
+
+    a {
+        color: white;
+    }
+}
+
+header {
+    padding: 1.5em;
+
+    .nav-title {
+        color: white;
+        font-weight: 500;
+        font-size: x-large;
+        padding-bottom: 1rem;
+    }
+}
+
+nav {
+    display: none;
+}
+
+.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.75rem;
+
+        a {
+            display: block;
+            padding: 1rem 0;
+        }
+
+        li {
+            text-align: center;
+        }
+
+        li:hover {
+            background-color: #0096c7;
+        }
+    }
+}
+
+// Responsive Menu
+.toggle-button {
+    position: absolute;
+    top: 1.75rem;
+    right: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+    .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.social {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .toggle-button {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5em;
+
+        .nav-title {
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        ul {
+            display: flex;
+
+            a {
+                // display: block;
+                padding: 0 1em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .nav-container {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background-color: unset;
+
+        header {
+            background-color: #0096c7;
+        }
+    }
+
+    header {
+        padding: 2em 2em 2em 4em;
+    }
+
+    .social {
+        display: block;
+        padding: 2em 4em 2em 0;
+
+        ul {
+            display: flex;
+            float: right;
+            justify-content: space-around;
+            width: 70%;
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+}
