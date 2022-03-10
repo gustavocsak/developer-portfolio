@@ -89,6 +89,39 @@ img {
     display: none;
 }
 
+main {
+    background-color: #00b4d8;
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+
+    .content {
+        justify-content: center;
+        align-items: center;
+
+        p {
+            text-align: justify;
+        }
+    }
+
+    .social-mobile {
+        display: block;
+        width: 50%;
+        padding: 2em;
+        margin: auto;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 600px) {
     .toggle-button {
         display: none;

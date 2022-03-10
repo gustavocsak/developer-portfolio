@@ -105,6 +105,48 @@ img {
   display: none;
 }
 
+main {
+  background-color: #00b4d8;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+main .content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .content p {
+  text-align: justify;
+}
+
+main .social-mobile {
+  display: block;
+  width: 50%;
+  padding: 2em;
+  margin: auto;
+}
+
+main .social-mobile ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .social-mobile ul img {
+  width: 30px;
+}
+
 @media only screen and (min-width: 600px) {
   .toggle-button {
     display: none;
