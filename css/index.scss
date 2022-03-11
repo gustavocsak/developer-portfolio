@@ -5,7 +5,7 @@ body {
 }
 
 .nav-container {
-    background-color: #00b4d8;
+    background-color: #0096c7;
 
     a {
         color: white;
@@ -47,7 +47,7 @@ nav {
         }
 
         li:hover {
-            background-color: #0096c7;
+            background-color: #00b4d8;
         }
     }
 }
@@ -89,35 +89,28 @@ img {
     display: none;
 }
 
-main {
-    background-color: #00b4d8;
+.main-content {
+    background: #00b4d8;
     color: white;
     display: grid;
     text-align: center;
     padding: 4em;
+}
 
-    .content {
-        justify-content: center;
+.social-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        display: flex;
+        width: 180px;
+        justify-content: space-between;
         align-items: center;
+        padding: 2rem;
 
-        p {
-            text-align: justify;
-        }
-    }
-
-    .social-mobile {
-        display: block;
-        width: 50%;
-        padding: 2em;
-        margin: auto;
-
-        ul {
-            display: flex;
-            justify-content: space-between;
-
-            img {
-                width: 30px;
-            }
+        img {
+            width: 75%;
         }
     }
 }
@@ -150,13 +143,28 @@ main {
             }
         }
     }
+
+    img {
+        width: 70%;
+    }
+
+    // .main-content {
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    //     align-items: center;
+
+    //     img {
+    //         max-width: 80%;
+    //     }
+    // }
 }
 
 @media only screen and (min-width: 1024px) {
     .nav-container {
         display: grid;
         grid-template-columns: 66% auto;
-        background-color: unset;
+        background: unset;
 
         header {
             background-color: #0096c7;
@@ -180,6 +188,43 @@ main {
             img {
                 width: 30px;
             }
+        }
+    }
+
+    .main-content {
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        padding: 0;
+
+        .left-content {
+            background: #00b4d8;
+            padding: 6em 8em 6em 4em;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 3em;
+            line-height: 1.2em;
+        }
+
+        .right-content {
+            margin-left: -25%;
+            margin-top: 25%;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .social-mobile {
+        justify-content: flex-start;
+
+        ul {
+            padding-left: 0;
         }
     }
 }
