@@ -179,6 +179,12 @@ img {
   img {
     width: 70%;
   }
+  .main-content {
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -230,8 +236,8 @@ img {
     line-height: 1.2em;
   }
   .main-content .right-content {
-    margin-left: -25%;
-    margin-top: 25%;
+    margin-left: -20%;
+    margin-top: 10%;
     width: 100%;
   }
   .main-content .right-content img {
