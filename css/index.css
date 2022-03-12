@@ -155,6 +155,18 @@ a {
   color: white;
 }
 
+.project-showcase {
+  text-align: center;
+}
+
+.project-showcase .section-title {
+  margin: 0;
+  font-size: 3em;
+  line-height: 1.2em;
+  color: #00b4d8;
+  margin: 2em 0 0.5em 0;
+}
+
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,6 +190,7 @@ a {
   background-color: white;
   border-radius: 10px;
   margin-bottom: 4em;
+  max-width: 70%;
 }
 
 .projects .project-card img {
@@ -341,11 +354,21 @@ a {
   .social-mobile ul {
     padding-left: 0;
   }
+  .project-showcase {
+    height: 90vh;
+  }
+  .project-showcase .section-title {
+    margin-bottom: 0;
+  }
   .projects {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .projects .project-card {
+    max-width: 80%;
+    margin: 2em;
   }
 }
 /*# sourceMappingURL=index.css.map */
