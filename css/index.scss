@@ -5,7 +5,7 @@ body {
 }
 
 .nav-container {
-    background-color: #00b4d8;
+    background-color: #0096c7;
 
     a {
         color: white;
@@ -47,7 +47,7 @@ nav {
         }
 
         li:hover {
-            background-color: #0096c7;
+            background-color: #00b4d8;
         }
     }
 }
@@ -89,6 +89,42 @@ img {
     display: none;
 }
 
+.main-content {
+    background: #00b4d8;
+    color: white;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+
+    .right-content {
+        margin-top: 3rem;
+    }
+}
+
+.social-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        display: flex;
+        width: 180px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+
+        img {
+            width: 75%;
+        }
+    }
+}
+
+.highlight {
+    padding: 0 5px;
+    background: black;
+    color: white;
+}
+
 @media only screen and (min-width: 600px) {
     .toggle-button {
         display: none;
@@ -117,13 +153,23 @@ img {
             }
         }
     }
+
+    img {
+        width: 70%;
+    }
+
+    .main-content {
+        display: grid;
+        text-align: center;
+        padding: 4em;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     .nav-container {
         display: grid;
         grid-template-columns: 66% auto;
-        background-color: unset;
+        background: unset;
 
         header {
             background-color: #0096c7;
@@ -147,6 +193,43 @@ img {
             img {
                 width: 30px;
             }
+        }
+    }
+
+    .main-content {
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        padding: 0;
+
+        .left-content {
+            background: #00b4d8;
+            padding: 6em 8em 6em 4em;
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 3em;
+            line-height: 1.2em;
+        }
+
+        .right-content {
+            margin-left: -20%;
+            margin-top: 10%;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .social-mobile {
+        justify-content: flex-start;
+
+        ul {
+            padding-left: 0;
         }
     }
 }

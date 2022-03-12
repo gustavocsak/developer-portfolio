@@ -5,7 +5,7 @@ body {
 }
 
 .nav-container {
-  background-color: #00b4d8;
+  background-color: #0096c7;
 }
 
 .nav-container a {
@@ -59,7 +59,7 @@ nav {
 }
 
 .active ul li:hover {
-  background-color: #0096c7;
+  background-color: #00b4d8;
 }
 
 .toggle-button {
@@ -105,6 +105,55 @@ img {
   display: none;
 }
 
+.main-content {
+  background: #00b4d8;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.main-content .right-content {
+  margin-top: 3rem;
+}
+
+.social-mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-mobile ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 180px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.social-mobile ul img {
+  width: 75%;
+}
+
+.highlight {
+  padding: 0 5px;
+  background: black;
+  color: white;
+}
+
 @media only screen and (min-width: 600px) {
   .toggle-button {
     display: none;
@@ -137,6 +186,15 @@ img {
   header ul a {
     padding: 0 1em;
   }
+  img {
+    width: 70%;
+  }
+  .main-content {
+    display: -ms-grid;
+    display: grid;
+    text-align: center;
+    padding: 4em;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -145,7 +203,7 @@ img {
     display: grid;
     -ms-grid-columns: 66% auto;
         grid-template-columns: 66% auto;
-    background-color: unset;
+    background: unset;
   }
   .nav-container header {
     background-color: #0096c7;
@@ -168,6 +226,40 @@ img {
   }
   .social ul img {
     width: 30px;
+  }
+  .main-content {
+    height: 90vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 66% auto;
+        grid-template-columns: 66% auto;
+    background: unset;
+    padding: 0;
+  }
+  .main-content .left-content {
+    background: #00b4d8;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .main-content h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+  }
+  .main-content .right-content {
+    margin-left: -20%;
+    margin-top: 10%;
+    width: 100%;
+  }
+  .main-content .right-content img {
+    width: 100%;
+  }
+  .social-mobile {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .social-mobile ul {
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=index.css.map */
