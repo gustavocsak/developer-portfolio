@@ -126,46 +126,99 @@ a {
     color: white;
 }
 
-.project-showcase {
-    margin-top: 3em;
-    padding: 4em 4em;
-    text-align: center;
-    .section-title {
-        color: #00b4d8;
-        font-size: 3em;
-        line-height: 1.2em;
-        margin: 0;
-        margin-bottom: 1.5em;
-    }
-}
-
 .projects {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-
-    img {
-        width: 100%;
-        border-radius: 10px;
-    }
+    padding: 4em;
 
     .project-card {
         filter: drop-shadow(7px 7px 7px #838181);
         background-color: white;
         border-radius: 10px;
-        margin: 1.5rem;
+        margin-bottom: 4em;
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-title {
+            margin: 0;
+            font-size: 1.25em;
+        }
 
         .project-body {
             display: flex;
             flex-direction: column;
-            padding: 1.5rem;
-            // text-align: ;
+            padding: 1em;
+        }
 
-            h4 {
-                margin: 0;
+        .project-access {
+            display: flex;
+
+            ul {
+                display: flex;
+                align-items: center;
+                align-self: flex-start;
+                justify-content: space-between;
+                max-width: 50%;
+
+                li {
+                    margin: 0.25em;
+                    img {
+                        width: 28px;
+                    }
+                }
             }
         }
     }
 }
+
+// .project-showcase {
+//     height: 90vh;
+//     margin-top: 2em;
+//     padding: 4em 6em;
+//     text-align: center;
+
+//     .section-title {
+//         color: #00b4d8;
+//         font-size: 3em;
+//         line-height: 1.2em;
+//         margin: 0;
+//         margin-bottom: 1.5em;
+//     }
+// }
+
+// .projects {
+//     display: flex;
+//     flex-direction: column;
+
+//     img {
+//         width: 100%;
+//         border-radius: 10px;
+//     }
+
+//     .project-card {
+//         filter: drop-shadow(7px 7px 7px #838181);
+//         background-color: white;
+//         border-radius: 10px;
+//         margin: 1.5rem;
+
+//         .project-body {
+//             display: flex;
+//             flex-direction: column;
+//             padding: 1.5rem;
+//             // text-align: ;
+
+//             h4 {
+//                 margin: 0;
+//                 font-size: 1.75em;
+//             }
+//         }
+//     }
+// }
 
 @media only screen and (min-width: 600px) {
     .toggle-button {

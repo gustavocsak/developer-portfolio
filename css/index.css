@@ -155,33 +155,21 @@ a {
   color: white;
 }
 
-.project-showcase {
-  margin-top: 3em;
-  padding: 4em 4em;
-  text-align: center;
-}
-
-.project-showcase .section-title {
-  color: #00b4d8;
-  font-size: 3em;
-  line-height: 1.2em;
-  margin: 0;
-  margin-bottom: 1.5em;
-}
-
 .projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.projects img {
-  width: 100%;
-  border-radius: 10px;
+  padding: 4em;
 }
 
 .projects .project-card {
@@ -189,7 +177,17 @@ a {
           filter: drop-shadow(7px 7px 7px #838181);
   background-color: white;
   border-radius: 10px;
-  margin: 1.5rem;
+  margin-bottom: 4em;
+}
+
+.projects .project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.projects .project-card .project-title {
+  margin: 0;
+  font-size: 1.25em;
 }
 
 .projects .project-card .project-body {
@@ -200,11 +198,36 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1.5rem;
+  padding: 1em;
 }
 
-.projects .project-card .project-body h4 {
-  margin: 0;
+.projects .project-card .project-access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.projects .project-card .project-access ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 50%;
+}
+
+.projects .project-card .project-access ul li {
+  margin: 0.25em;
+}
+
+.projects .project-card .project-access ul li img {
+  width: 28px;
 }
 
 @media only screen and (min-width: 600px) {
