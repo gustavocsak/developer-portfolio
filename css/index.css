@@ -97,10 +97,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
-}
-
 .social {
   display: none;
 }
@@ -112,6 +108,11 @@ img {
   display: grid;
   text-align: center;
   padding: 4em;
+}
+
+.main-content h1 {
+  font-size: 3em;
+  line-height: 1.2em;
 }
 
 .main-content .right-content {
@@ -154,6 +155,58 @@ img {
   color: white;
 }
 
+.project-showcase {
+  margin-top: 3em;
+  padding: 4em 4em;
+  text-align: center;
+}
+
+.project-showcase .section-title {
+  color: #00b4d8;
+  font-size: 3em;
+  line-height: 1.2em;
+  margin: 0;
+  margin-bottom: 1.5em;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.projects .project-card {
+  -webkit-filter: drop-shadow(7px 7px 7px #838181);
+          filter: drop-shadow(7px 7px 7px #838181);
+  background-color: white;
+  border-radius: 10px;
+  margin: 1.5rem;
+}
+
+.projects .project-card .project-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5rem;
+}
+
+.projects .project-card .project-body h4 {
+  margin: 0;
+}
+
 @media only screen and (min-width: 600px) {
   .toggle-button {
     display: none;
@@ -194,6 +247,10 @@ img {
     display: grid;
     text-align: center;
     padding: 4em;
+  }
+  .main-content h1 {
+    font-size: 3em;
+    line-height: 1.2em;
   }
 }
 
@@ -260,6 +317,12 @@ img {
   }
   .social-mobile ul {
     padding-left: 0;
+  }
+  .projects {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=index.css.map */
