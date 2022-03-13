@@ -192,6 +192,36 @@ a {
     }
 }
 
+//Work experience page:
+.work-experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+
+    .section-title {
+        padding-top: 0;
+    }
+
+    .timeline {
+        .position {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1em;
+
+            .dot {
+                height: 15px;
+                width: 15px;
+                border: 3px solid $primary-color;
+                background-color: white;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 600px) {
     .toggle-button {
         display: none;
