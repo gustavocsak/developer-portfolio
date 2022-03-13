@@ -83,6 +83,10 @@ a {
     text-decoration: none;
 }
 
+section {
+    padding: 4em;
+}
+
 .social {
     display: none;
 }
@@ -133,12 +137,17 @@ a {
     font-size: 3em;
     line-height: 1.2em;
     color: $primary-color;
-    padding-top: 2em;
+    // padding-top: 2em;
 }
 
 // Projects Page:
 .project-showcase {
     text-align: center;
+    // padding: 4em;
+
+    .project-header {
+        margin-bottom: 6em;
+    }
 }
 
 .projects {
@@ -146,10 +155,9 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 4em;
 
     .project-card {
-        filter: drop-shadow(0px 5px 5px #838181);
+        box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
         background-color: white;
         border-radius: 10px;
         margin-bottom: 4em;
@@ -187,6 +195,52 @@ a {
                         width: 28px;
                     }
                 }
+            }
+        }
+    }
+}
+
+//Work experience page:
+
+.work-experience-description {
+    text-align: center;
+    background-color: $primary-color;
+    padding-bottom: 10em;
+
+    .section-title {
+        color: white;
+    }
+
+    .subtitle {
+        color: white;
+    }
+}
+
+.work-experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .section-title {
+        padding-top: 0;
+    }
+
+    .timeline {
+        margin-top: -10em;
+
+        .position {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 1.25em;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
+            margin-bottom: 3em;
+
+            .position-date {
+                color: #777777;
             }
         }
     }
@@ -233,6 +287,11 @@ a {
             font-size: 3em;
             line-height: 1.2em;
         }
+    }
+
+    .position-info {
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -324,6 +383,20 @@ a {
         .project-card {
             // max-width: 80%;
             margin: 2em;
+        }
+    }
+
+    .timeline {
+        display: flex;
+        justify-content: center;
+        // text-align: center;
+
+        .position {
+            margin: 2em;
+        }
+
+        .position-info {
+            display: block;
         }
     }
 }
