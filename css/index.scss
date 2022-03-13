@@ -1,3 +1,5 @@
+$primary-color: #00b4d8;
+
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -47,7 +49,7 @@ nav {
         }
 
         li:hover {
-            background-color: #00b4d8;
+            background-color: $primary-color;
         }
     }
 }
@@ -86,7 +88,7 @@ a {
 }
 
 .main-content {
-    background: #00b4d8;
+    background: $primary-color;
     color: white;
     display: grid;
     text-align: center;
@@ -126,16 +128,16 @@ a {
     color: white;
 }
 
+.section-title {
+    margin: 0;
+    font-size: 3em;
+    line-height: 1.2em;
+    color: $primary-color;
+    margin: 2em 0 0.5em 0;
+}
+
 .project-showcase {
     text-align: center;
-
-    .section-title {
-        margin: 0;
-        font-size: 3em;
-        line-height: 1.2em;
-        color: #00b4d8;
-        margin: 2em 0 0.5em 0;
-    }
 }
 
 .projects {
@@ -272,7 +274,7 @@ a {
         padding: 0;
 
         .left-content {
-            background: #00b4d8;
+            background: $primary-color;
             padding: 6em 8em 6em 4em;
             text-align: left;
         }
@@ -301,18 +303,25 @@ a {
         }
     }
 
-    .project-showcase {
-        height: 90vh;
-        .section-title {
-            margin-bottom: 0;
+    .project-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .project-showcase {
+            height: 90vh;
+
+            .section-title {
+                margin-bottom: 0;
+            }
         }
     }
 
     .projects {
         flex-direction: row;
+        max-width: 1300px;
 
         .project-card {
-            max-width: 80%;
+            // max-width: 80%;
             margin: 2em;
         }
     }
