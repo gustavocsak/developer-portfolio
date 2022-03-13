@@ -133,9 +133,10 @@ a {
     font-size: 3em;
     line-height: 1.2em;
     color: $primary-color;
-    margin: 2em 0 0.5em 0;
+    padding-top: 2em;
 }
 
+// Projects Page:
 .project-showcase {
     text-align: center;
 }
@@ -148,7 +149,7 @@ a {
     padding: 4em;
 
     .project-card {
-        filter: drop-shadow(7px 7px 7px #838181);
+        filter: drop-shadow(0px 5px 5px #838181);
         background-color: white;
         border-radius: 10px;
         margin-bottom: 4em;
