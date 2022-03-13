@@ -297,21 +297,12 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1em;
+  padding: 1.25em;
   background-color: white;
   border-radius: 10px;
   -webkit-box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
           box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
   margin-bottom: 3em;
-}
-
-.work-experience .timeline .position .dot {
-  height: 12px;
-  width: 12px;
-  border: 3px solid #00b4d8;
-  background-color: white;
-  border-radius: 8px;
-  margin-right: 2em;
 }
 
 @media only screen and (min-width: 600px) {
