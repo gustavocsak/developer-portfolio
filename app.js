@@ -10,7 +10,6 @@ menuButton.addEventListener('click', () => {
 /* Smooth scrolling to section when clicking navigation anchor tags */
 document.querySelectorAll('.link').forEach((anchor) => {
     anchor.addEventListener('click', function (e) {
-        links.classList.toggle('active');
         e.preventDefault();
 
         document.querySelector(this.getAttribute('href')).scrollIntoView({
