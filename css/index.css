@@ -280,7 +280,7 @@ section {
 }
 
 .work-experience .timeline {
-  margin-top: -10em;
+  margin-top: -12em;
 }
 
 .work-experience .timeline .position {
@@ -304,6 +304,30 @@ section {
 
 .work-experience .timeline .position .position-date {
   color: #777777;
+}
+
+footer {
+  padding: 4em;
+  background-color: #00b4d8;
+  text-align: center;
+}
+
+footer ul {
+  margin-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer ul img {
+  width: 80%;
+}
+
+footer ul li {
+  padding: 0.75em;
 }
 
 @media only screen and (min-width: 600px) {
