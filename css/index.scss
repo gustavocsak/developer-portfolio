@@ -108,7 +108,7 @@ section {
     }
 }
 
-.social-mobile {
+.social-main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,7 +121,7 @@ section {
         padding: 2rem;
 
         img {
-            width: 75%;
+            width: 60%;
         }
     }
 }
@@ -374,7 +374,7 @@ footer {
         }
     }
 
-    .social-mobile {
+    .social-main {
         justify-content: flex-start;
 
         ul {

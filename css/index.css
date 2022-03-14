@@ -123,7 +123,7 @@ section {
   margin-top: 3rem;
 }
 
-.social-mobile {
+.social-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +135,7 @@ section {
           align-items: center;
 }
 
-.social-mobile ul {
+.social-main ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,8 +149,8 @@ section {
   padding: 2rem;
 }
 
-.social-mobile ul img {
-  width: 75%;
+.social-main ul img {
+  width: 60%;
 }
 
 .highlight {
@@ -441,12 +441,12 @@ footer ul li {
   .main-content .right-content img {
     width: 100%;
   }
-  .social-mobile {
+  .social-main {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .social-mobile ul {
+  .social-main ul {
     padding-left: 0;
   }
   .project-container {
