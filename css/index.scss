@@ -241,6 +241,10 @@ section {
             .position-date {
                 color: #777777;
             }
+
+            p {
+                line-height: 2em;
+            }
         }
     }
 }
@@ -306,6 +310,10 @@ footer {
             font-size: 3em;
             line-height: 1.2em;
         }
+    }
+
+    .project-card {
+        min-height: 400px;
     }
 
     .position-info {
@@ -398,10 +406,16 @@ footer {
     .projects {
         flex-direction: row;
         max-width: 1300px;
+        // overflow: hidden;
 
         .project-card {
-            // max-width: 80%;
+            min-height: 450px;
+            overflow: hidden;
             margin: 2em;
+        }
+        .project-body {
+            min-height: 190px;
+            justify-content: space-between;
         }
     }
 
@@ -412,6 +426,7 @@ footer {
 
         .position {
             margin: 2em;
+            min-width: 550px;
         }
 
         .position-info {

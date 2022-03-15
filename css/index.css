@@ -306,6 +306,10 @@ section {
   color: #777777;
 }
 
+.work-experience .timeline .position p {
+  line-height: 2em;
+}
+
 footer {
   padding: 2em;
   background-color: #00b4d8;
@@ -374,6 +378,9 @@ footer ul li {
   .main-content h1 {
     font-size: 3em;
     line-height: 1.2em;
+  }
+  .project-card {
+    min-height: 400px;
   }
   .position-info {
     display: -webkit-box;
@@ -474,7 +481,15 @@ footer ul li {
     max-width: 1300px;
   }
   .projects .project-card {
+    min-height: 450px;
+    overflow: hidden;
     margin: 2em;
+  }
+  .projects .project-body {
+    min-height: 190px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .timeline {
     display: -webkit-box;
@@ -486,6 +501,7 @@ footer ul li {
   }
   .timeline .position {
     margin: 2em;
+    min-width: 550px;
   }
   .timeline .position-info {
     display: block;
