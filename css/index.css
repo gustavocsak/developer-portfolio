@@ -5,7 +5,7 @@ body {
 }
 
 .nav-container {
-  background-color: #0096c7;
+  background-color: #3f37c9;
 }
 
 .nav-container a {
@@ -59,7 +59,7 @@ nav {
 }
 
 .active ul li:hover {
-  background-color: #00b4d8;
+  background-color: #4361ee;
 }
 
 .toggle-button {
@@ -106,7 +106,7 @@ section {
 }
 
 .main-content {
-  background: #00b4d8;
+  background: #4361ee;
   color: white;
   display: -ms-grid;
   display: grid;
@@ -163,7 +163,7 @@ section {
   margin: 0;
   font-size: 3em;
   line-height: 1.2em;
-  color: #00b4d8;
+  color: #4361ee;
 }
 
 .project-showcase {
@@ -249,70 +249,31 @@ section {
   width: 28px;
 }
 
-.work-experience-description {
+.about-me-description {
+  background-color: #4361ee;
   text-align: center;
-  background-color: #00b4d8;
-  padding-bottom: 10em;
-}
-
-.work-experience-description .section-title {
   color: white;
 }
 
-.work-experience-description .subtitle {
+.about-me-description .section-title {
   color: white;
 }
 
-.work-experience {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.about-me {
+  margin-top: -7em;
 }
 
-.work-experience .section-title {
-  padding-top: 0;
-}
-
-.work-experience .timeline {
-  margin-top: -12em;
-}
-
-.work-experience .timeline .position {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding: 1.25em;
-  background-color: white;
-  border-radius: 10px;
+.about-me .card {
   -webkit-box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
           box-shadow: 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 41.8px 33.4px rgba(0, 0, 0, 0.086);
-  margin-bottom: 3em;
-}
-
-.work-experience .timeline .position .position-date {
-  color: #777777;
-}
-
-.work-experience .timeline .position p {
-  line-height: 2em;
+  padding: 2em;
+  border-radius: 10px;
+  background-color: white;
 }
 
 footer {
   padding: 2em;
-  background-color: #00b4d8;
+  background-color: #4361ee;
   text-align: center;
 }
 
@@ -382,13 +343,16 @@ footer ul li {
   .project-card {
     min-height: 400px;
   }
-  .position-info {
+  .about-me {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-me .card {
+    max-width: 1130px;
   }
 }
 
@@ -401,7 +365,7 @@ footer ul li {
     background: unset;
   }
   .nav-container header {
-    background-color: #0096c7;
+    background-color: #3f37c9;
   }
   header {
     padding: 2em 2em 2em 4em;
@@ -432,7 +396,7 @@ footer ul li {
     padding: 0;
   }
   .main-content .left-content {
-    background: #00b4d8;
+    background: #4361ee;
     padding: 6em 8em 6em 4em;
     text-align: left;
   }
@@ -490,21 +454,6 @@ footer ul li {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-  .timeline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .timeline .position {
-    margin: 2em;
-    min-width: 550px;
-  }
-  .timeline .position-info {
-    display: block;
   }
 }
 /*# sourceMappingURL=index.css.map */
