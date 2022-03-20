@@ -116,13 +116,13 @@ section {
 
     ul {
         display: flex;
-        width: 180px;
+        width: 230px;
         justify-content: space-between;
         align-items: center;
         padding: 2rem;
 
         img {
-            width: 60%;
+            width: 40px;
         }
     }
 }
@@ -228,6 +228,7 @@ footer {
     padding: 2em;
     background-color: $primary-color;
     text-align: center;
+    color: white;
 
     ul {
         margin-bottom: 1em;
@@ -235,7 +236,7 @@ footer {
         justify-content: center;
 
         img {
-            width: 80%;
+            width: 30px;
         }
         li {
             padding: 0.75em;

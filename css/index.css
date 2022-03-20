@@ -139,7 +139,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 180px;
+  width: 230px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -150,7 +150,7 @@ section {
 }
 
 .social-main ul img {
-  width: 60%;
+  width: 40px;
 }
 
 .highlight {
@@ -275,6 +275,7 @@ footer {
   padding: 2em;
   background-color: #4361ee;
   text-align: center;
+  color: white;
 }
 
 footer ul {
@@ -288,7 +289,7 @@ footer ul {
 }
 
 footer ul img {
-  width: 80%;
+  width: 30px;
 }
 
 footer ul li {
