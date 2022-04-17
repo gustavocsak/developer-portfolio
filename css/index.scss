@@ -286,10 +286,6 @@ footer {
         }
     }
 
-    .project-card {
-        min-height: 400px;
-    }
-
     .about-me {
         display: flex;
         justify-content: center;
@@ -371,6 +367,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0 5em;
         .project-showcase {
             height: 90vh;
 
@@ -382,16 +379,14 @@ footer {
 
     .projects {
         flex-direction: row;
-        max-width: 1300px;
-        // overflow: hidden;
 
         .project-card {
-            min-height: 450px;
-            overflow: hidden;
+            flex-shrink: 0;
+            max-width: 500px;
             margin: 2em;
         }
         .project-body {
-            min-height: 190px;
+            min-height: 180px;
             justify-content: space-between;
         }
     }
